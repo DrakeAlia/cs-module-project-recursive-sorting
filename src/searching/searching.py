@@ -7,11 +7,11 @@ def binary_search(arr, target, low, high):
         mid = (high + low) // 2
         # If element is greater than mid, then it's in the left subarray
         if arr[mid] > target:
-            #  recurse towards the base case
+            # Recurse towards the base case
             return binary_search(arr, target, low, mid -1)
             # If elemnt is less than mid, then it's in the right subarray
         elif arr[mid] < target:
-            # recurse towards base case
+            # Recurse towards base case
             return binary_search(arr, target, mid + 1, high)
             # If element is the target 
         elif arr[mid] == target:
